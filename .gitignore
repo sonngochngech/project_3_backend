@@ -1,0 +1,10 @@
+chat/node_modules
+project3/node_modules
+project3/optimization/__pycache__
+project3/optimization/env
+place/.env
+place/.mvn
+place/.idea
+place/idea
+place/target
+
