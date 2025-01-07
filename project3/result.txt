@@ -1,0 +1,166 @@
+[
+  [],
+  [
+    {
+      "id": 31,
+      "name": "Ngũ Hành Sơn",
+      "type": "Nature",
+      "terms": [
+        {
+          "id": 3,
+          "name": "EVENING"
+        },
+        {
+          "id": 1,
+          "name": "MORNING"
+        },
+        {
+          "id": 2,
+          "name": "AFTERNOON"
+        }
+      ],
+      "price": 40000,
+      "location": {
+        "id": 31,
+        "title": "Ngũ Hành Sơn",
+        "address": "Da Nang",
+        "latitude": 15.9988912,
+        "longitude": 108.255546,
+        "rating": null,
+        "ratingCount": null,
+        "category": "Da Nang",
+        "phoneNumber": null,
+        "website": null,
+        "description": null,
+        "cid": "6707325152960061344",
+        "city": {
+          "id": 15,
+          "name": "Đà Nẵng",
+          "supported": true
+        }
+      },
+      "duration": 2
+    },
+    {
+      "id": 52,
+      "name": "Bún chả cá Bà Lữ",
+      "type": "Foodie",
+      "terms": [
+        {
+          "id": 3,
+          "name": "EVENING"
+        },
+        {
+          "id": 1,
+          "name": "MORNING"
+        },
+        {
+          "id": 2,
+          "name": "AFTERNOON"
+        }
+      ],
+      "price": 35000,
+      "location": {
+        "id": 52,
+        "title": "Bún chả cá Bà Lữ",
+        "address": "319 Hùng Vương, Vĩnh Trung, Thanh Khê, Đà Nẵng",
+        "latitude": 10.7753628,
+        "longitude": 106.6458483,
+        "rating": null,
+        "ratingCount": null,
+        "category": null,
+        "phoneNumber": null,
+        "website": null,
+        "description": null,
+        "cid": "3281439882740089403",
+        "city": {
+          "id": 15,
+          "name": "Đà Nẵng",
+          "supported": true
+        }
+      },
+      "duration": 2
+    },
+    {
+      "id": 39,
+      "name": "Bao Viet Complex",
+      "type": "Shopping",
+      "terms": [
+        {
+          "id": 3,
+          "name": "EVENING"
+        },
+        {
+          "id": 1,
+          "name": "MORNING"
+        },
+        {
+          "id": 2,
+          "name": "AFTERNOON"
+        }
+      ],
+      "price": 0,
+      "location": {
+        "id": 39,
+        "title": "BaoViet Building",
+        "address": "233 Đ. Đồng Khởi, Bến Nghé, Quận 1, Hồ Chí Minh",
+        "latitude": 10.7783861,
+        "longitude": 106.7003044,
+        "rating": null,
+        "ratingCount": null,
+        "category": "Building",
+        "phoneNumber": null,
+        "website": null,
+        "description": null,
+        "cid": "15429827315293727325",
+        "city": {
+          "id": 15,
+          "name": "Đà Nẵng",
+          "supported": true
+        }
+      },
+      "duration": 4
+    },
+    {
+      "id": 58,
+      "name": "Núi Thần Tài",
+      "type": "Nature",
+      "terms": [
+        {
+          "id": 3,
+          "name": "EVENING"
+        },
+        {
+          "id": 1,
+          "name": "MORNING"
+        },
+        {
+          "id": 2,
+          "name": "AFTERNOON"
+        }
+      ],
+      "price": 300000,
+      "location": {
+        "id": 58,
+        "title": "Công viên Suối khoáng nóng Núi Thần Tài",
+        "address": "QL14G, Hoà Phú, Hòa Vang, Đà Nẵng",
+        "latitude": 15.9678482,
+        "longitude": 108.0198634,
+        "rating": null,
+        "ratingCount": null,
+        "category": "Park",
+        "phoneNumber": null,
+        "website": null,
+        "description": null,
+        "cid": "8838696588006712299",
+        "city": {
+          "id": 15,
+          "name": "Đà Nẵng",
+          "supported": true
+        }
+      },
+      "duration": 4
+    }
+  ],
+  []
+]

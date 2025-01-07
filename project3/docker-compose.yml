@@ -1,0 +1,21 @@
+services:
+  mongodb: 
+    container_name: place-mongodb
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    volumes:
+      - place-mongodb:/data/db
+    networks:
+      - project3-monogodb
+    restart: unless-stopped
+
+networks:
+  project3-monogodb:
+    driver: bridge
+volumes:
+  place-mongodb:
+    driver: local

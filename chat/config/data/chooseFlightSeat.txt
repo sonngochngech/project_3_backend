@@ -1,0 +1,15 @@
+Cách chọn số ghế máy bay tốt theo Hỷ - Dụng Thần.
+Số ghế máy bay có dạng: Chữ cái – Chữ số
+
+Phần chữ cái: A, B, C, D, E hoặc F.
+Phần chữ số: Một trong các số từ 1 đến 31.
+Bảng chọn số ghế máy bay:
+
+Mộc: Chữ số 3, 8
+Hỏa: Chữ cái D, Chữ số 2, 7
+Thổ: Chữ cái A, E, Chữ số 0, 5
+Kim: Chữ cái C, Chữ số 4, 9
+Thủy: Chữ cái B, F, Chữ số 1, 6
+
+Trong trường hợp Dụng – Hỷ Thần là Mộc mà không có chữ cái mang hành Mộc, thì chọn chữ cái mang hành Thủy sinh cho Mộc để thay thế.
+Nếu có nhiều hơn một ngũ hành là Dụng – Hỷ Thần, thì liệt kê tất cả các trường hợp của từng ngũ hành và kết hợp lại.

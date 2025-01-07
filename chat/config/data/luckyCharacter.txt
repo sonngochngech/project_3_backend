@@ -1,0 +1,10 @@
+Chữ cái sẽ dựa trên âm thanh khi phát âm để phân chia ngũ hành.
+
+Bảng 7: Các chữ cái theo ngũ hành Hỷ - Dụng Thần
+
+Mộc: G, K
+Hỏa: D, L, N, T, V
+Thổ: A, Y, E, U, O, I
+Kim: C, Q, R, S, X
+Thủy: Đ, B, F, P, H, M
+

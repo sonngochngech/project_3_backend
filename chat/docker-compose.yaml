@@ -1,0 +1,29 @@
+
+services:
+  mongodb: 
+    container_name: vietjerair-mongodb
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - data-mongodb:/data/db
+    networks:
+      - vietjet_air
+    restart: unless-stopped
+  chorma: 
+    container_name: chorma
+    image: chromadb/chroma:latest
+    ports:
+      - "8000:8000"
+    networks:
+      - vietjet_air
+
+networks:
+  vietjet_air:
+    driver: bridge
+volumes:
+  data-mongodb:
+    driver: local

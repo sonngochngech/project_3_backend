@@ -1,0 +1,72 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model activities {
+  duration       Int?
+  price          Int?
+  id             BigInt           @id
+  location_id    BigInt?          @unique(map: "UKburnxj8wda7mk8bgt47xpuost")
+  name           String?          @db.VarChar(255)
+  type           String?          @db.VarChar(255)
+  locations      locations?       @relation(fields: [location_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "FK3i7f1od1x93s60ul9j48qpdpe")
+  activity_terms activity_terms[]
+}
+
+model activity_terms {
+  activity_id BigInt
+  term_id     BigInt
+  activities  activities @relation(fields: [activity_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "FKgq0x3bmsx9yow1o0p6y8p2uvi")
+  terms       terms      @relation(fields: [term_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "FKmkno2qtb1b58qbb518xs6etev")
+
+  @@id([activity_id, term_id])
+  @@index([term_id], map: "FKmkno2qtb1b58qbb518xs6etev")
+}
+
+model cities {
+  supported Boolean?    @db.Bit(1)
+  id        BigInt      @id
+  name      String?     @db.VarChar(255)
+  foods     foods[]
+  locations locations[]
+}
+
+model foods {
+  city_id BigInt?
+  id      BigInt  @id
+  name    String? @db.VarChar(255)
+  cities  cities? @relation(fields: [city_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "FKslica1bu3bmw93rykly4wfvaf")
+
+  @@index([city_id], map: "FKslica1bu3bmw93rykly4wfvaf")
+}
+
+model locations {
+  latitude     Float?
+  longitude    Float?
+  rating       Float?
+  city_id      BigInt?
+  id           BigInt      @id
+  rating_count BigInt?
+  address      String?     @db.VarChar(255)
+  category     String?     @db.VarChar(255)
+  cid          String?     @db.VarChar(255)
+  description  String?     @db.VarChar(255)
+  phone_number String?     @db.VarChar(255)
+  title        String?     @db.VarChar(255)
+  website      String?     @db.VarChar(255)
+  activities   activities?
+  cities       cities?     @relation(fields: [city_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "FKgvg10vlf7gqvbgf9rbbho3gyg")
+
+  @@index([city_id], map: "FKgvg10vlf7gqvbgf9rbbho3gyg")
+}
+
+model terms {
+  id             BigInt           @id
+  name           String?          @db.VarChar(255)
+  activity_terms activity_terms[]
+}
